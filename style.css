@@ -1,0 +1,100 @@
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* navbar */
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-height: 60px;
+  background-color: #041C32;
+  justify-content: flex-end;
+  z-index: 1;
+  margin: 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  width: 230px;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.nav-list li{
+  font-size: 1.2em;
+  color: white;
+  list-style: none;
+  padding-right: 15px;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* main */
+main {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+/* welcome section */
+#welcome-section{
+  background-color: #C84B31;
+  padding: 200px;
+}
+
+#welcome-section h1{
+  font-size: 63px;
+  margin-bottom: 15px;
+}
+
+
+/* project section */
+#projects {
+  background-color: #064663;
+  margin: 0;
+  padding: 200px;
+}
+
+#projects article{
+ position: relative;
+ bottom: 10em;
+}
+
+#projects h1{
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.project-grid {
+  outline: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 100%;
+  grid-gap: 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+/* contact section */
+#contact {
+
+}
+/* footer */
